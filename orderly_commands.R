@@ -3,11 +3,11 @@ library(orderly)
 dirname <- dirname(rstudioapi::getActiveDocumentContext()$path)
 setwd(dirname)
 
-orderly_root_path <- paste(dirname, "/orderly", sep="")
+orderly_root_path <- paste(dirname, "/experiment-1", sep="")
 
 # creates a skeleton structure with READMEs explaining what the purpose of each folder
 # these folders will get created as you use orderly so not really necessary to run this...
-orderly_init(root=oderly_root_path)
+orderly_init(root=orderly_root_path)
 
 # root must be orderly root
 # first param is directory name which has the report (with an oderly.yml)
