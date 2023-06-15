@@ -1,0 +1,15 @@
+script: script.R
+
+depends:
+  - report_1:
+      id: latest
+      use:
+        data_report_1.csv: data.csv
+
+artefacts:
+  - staticgraph:
+      description: A graph with some lines
+      filenames: random_lines.pdf
+  - data:
+      description: Random data used
+      filenames: data_report_2.csv
