@@ -1,0 +1,9 @@
+script: script.R
+
+artefacts:
+  - staticgraph:
+      description: A graph with some lines
+      filenames: random_lines.pdf
+  - data:
+      description: Random data used
+      filenames: data.csv
